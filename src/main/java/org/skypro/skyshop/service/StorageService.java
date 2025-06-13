@@ -83,7 +83,7 @@ public class StorageService {
     }
 
     public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(productsMap.get(id));
 
-        return Optional.empty();
     }
 }
